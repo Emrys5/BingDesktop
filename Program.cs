@@ -11,9 +11,7 @@ namespace Emrys.Desktop
     public class Program
     {
         public static void Main(string[] args)
-        {
-
-
+        { 
             var task = Task.Factory.StartNew(() =>
               {
                   if (!Desktop.SetDesktop())
