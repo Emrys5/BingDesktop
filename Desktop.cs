@@ -34,7 +34,7 @@ namespace Emrys.Desktop
                 string jpgPath = Path.Combine(rootPath, DateTime.Now.ToString("yyyyMMdd") + ".jpg");
 
                 // 如果存在直接返回
-//                if (File.Exists(jpgPath)) return true;
+                if (File.Exists(jpgPath)) return true;
 
 
                 WebClient web = new WebClient();
