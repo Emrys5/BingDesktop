@@ -34,7 +34,7 @@ namespace Emrys.Desktop
                 string jpgPath = Path.Combine(rootPath, DateTime.Now.ToString("yyyyMMdd") + ".jpg");
 
                 // 如果存在直接返回
-                if (File.Exists(jpgPath)) return true;
+//                if (File.Exists(jpgPath)) return true;
 
 
                 WebClient web = new WebClient();
@@ -55,7 +55,7 @@ namespace Emrys.Desktop
                 Bitmap bitmap = new Bitmap(image, image.Width, image.Height);
                 Graphics g = Graphics.FromImage(bitmap);
 
-                g.DrawString(imageModel.Copyright, new Font("微软雅黑", 16), new SolidBrush(Color.White), 10, 10);
+                g.DrawString(imageModel.Copyright, new Font("微软雅黑", 18), new SolidBrush(Color.White), 20, 1000);
                 g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
                 g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.High;
