@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Emrys.Desktop
+namespace Emrys.BingDesktop
 {
 
-    public class Rootobject
+    public class BingImageJson
     {
         public Image[] Images { get; set; }
     }

@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace Emrys.Desktop
+namespace Emrys.BingDesktop
 {
     public class Program
     {

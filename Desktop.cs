@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Web.Script.Serialization;
 
-namespace Emrys.Desktop
+namespace Emrys.BingDesktop
 {
     /// <summary>
     /// 设置桌面背景
@@ -42,7 +42,7 @@ namespace Emrys.Desktop
                 string json = web.DownloadString("http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1");
 
                 // 获取图片信息
-                var imageModel = js.Deserialize<Rootobject>(json).Images[0];
+                var imageModel = js.Deserialize<BingImageJson>(json).Images[0];
 
                 // 获取图片URL
                 var imageUrl = "http://cn.bing.com/" + imageModel.Url;
