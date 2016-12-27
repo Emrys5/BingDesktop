@@ -19,7 +19,7 @@ namespace Emrys.Desktop
                       Thread.Sleep(1000 * 60 * 10);
                       while (!Desktop.SetDesktop())
                       {
-                          // 设置失败后没10分钟重试一次
+                          // 设置失败后每10分钟重试一次
                           Thread.Sleep(1000 * 60 * 10);
                       }
                   }
