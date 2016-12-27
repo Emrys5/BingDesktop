@@ -45,7 +45,7 @@ namespace Emrys.Desktop
                 var imageModel = js.Deserialize<Rootobject>(json).Images[0];
 
                 // 获取图片URL
-                var imageUrl = imageModel.Url;
+                var imageUrl = "http://cn.bing.com/" + imageModel.Url;
 
                 // 保存图片
                 web.DownloadFile(imageUrl, jpgPath);
